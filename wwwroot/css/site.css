@@ -1,0 +1,34 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+
+
+.navbar-brand{
+    margin:auto;
+    font-size: 3em;
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+}
+.row{
+    outline: 0px;
+}
+/*.header-row > div {
+    display: grid-inline;
+}*/
+
+.row:hover{
+    border: 2px solid red;
+}
+
+#id, #date{
+    display:none;
+}
