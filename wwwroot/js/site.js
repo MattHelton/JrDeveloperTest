@@ -3,38 +3,19 @@
 
 // Write your JavaScript code.
 
-$( function($) {
-    $( "#dialog-message" ).dialog({
+
+$('.grid-row').click(function(){
+$('#dialog-message').dialog({
       modal: true,
+show: {
+        effect: "blind",
+        duration: 500
+      },
       buttons: {
         Ok: function() {
           $( this ).dialog( "close" );
         }
       }
     });
-  } );
- $dialogDiv.dialog({
-    autoOpen: false,
-    modal: true,
-    width: 600,
-    resizable: false,
-    buttons: [
-        {
-            text: "Cancel",
-            "class": 'cancelButtonClass',
-            click: function() {
-                // Cancel code here
-            }
-        },
-        {
-            text: "Save",
-            "class": 'saveButtonClass',
-            click: function() {
-                // Save code here
-            }
-        }
-    ],
-    close: function() {
-        // Close code here (incidentally, same as Cancel code)
-    }
 });
+

@@ -14,28 +14,7 @@ a.navbar-brand {
     font-size: 3em;
 }
 
-.grid-container {
-    display: grid;
-}
-.row{
-    outline: 1px solid black;
-    margin: .5em;
-}
-/*.header-row > div {
-    display: grid-inline;
-}*/
 
-.row:hover{
-    border: 2px solid red;
-}
-
-#id, #date{
-    display:none;
-}
-
-input, textarea, label, button{
-    margin: 1em;
-}
 
 #dialog-message{
     display: none;
@@ -49,43 +28,71 @@ input, textarea, label, button{
 }
 
 .ui-widget-content {
-    background: CC99FF;
+    background: white;
     /*Change the dialog border color here*/
-    border: 1px solid #CC99FF;
-    color: #222222;
+    border: 1px solid blue;
+    color: black;
 }
 
-.ui-dialog {
-    left: 0;
-    outline: 0 none;
-    padding: 0 !important;
-    position: absolute;
-    top: 0;
+.ui-dialog-titlebar-close {
+    visibility: hidden;
 }
 
-#success {
-    padding: 0;
-    margin: 0;
+.ui-button {
+    outline: none;
+    border: 2px solid red !important;
+    border-radius: 0px !important;
 }
 
-.ui-dialog .ui-dialog-content {
-    background: none repeat scroll 0 0 transparent;
-    border: 0 none;
-    overflow: auto;
-    position: relative;
-    padding: 0 !important;
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    background-color: #fff;
+    color: #444;
+    max-width: 800px;
 }
 
-.ui-widget-header {
-    /*Change the Header color here*/
-    background: #CC99FF;
-    border: 0;
+.box {
+    background-color: #444;
     color: #fff;
-    font-weight: normal;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
 }
 
-.ui-dialog .ui-dialog-titlebar {
-    padding: 0.1em .5em;
-    position: relative;
-    font-size: 1em;
+
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+    margin: 0 auto;
+    padding: 0;
 }
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin-left: 0;
+
+}
+
+ul.labels {
+    margin-bottom: 1em;
+}
+
+
+ul.grid-row li {
+    height: 12vw;
+    max-height: 125px;
+}
+ul.grid-row {
+    border: 1px solid;
+}
+
+.grid-row:hover{
+    border: 2px solid red;
+}
+
