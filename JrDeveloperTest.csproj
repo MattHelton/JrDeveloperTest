@@ -29,4 +29,7 @@
   <ItemGroup>
     <None Include="wwwroot\lib\jquery\dist\jquery-ui.min.js" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SQL\" />
+  </ItemGroup>
 </Project>
