@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "b36818a78e1460eed609d6d51b385bb3652a4f45"
+    "signature": "a705d48cbe03a020b07e4a692f5e12cffd53a409"
   },
   "compilationOptions": {
     "defines": [
@@ -26,13 +26,22 @@
         "dependencies": {
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
-          "Microsoft.NETCore.App": "2.2.0"
+          "Microsoft.NETCore.App": "2.2.0",
+          "SQL": "1.0.0.1",
+          "jQuery": "3.3.1",
+          "jQuery.UI.Combined": "1.12.1"
         },
         "runtime": {
           "JrDeveloperTest.dll": {}
         },
         "compile": {
           "JrDeveloperTest.dll": {}
+        }
+      },
+      "jQuery/3.3.1": {},
+      "jQuery.UI.Combined/1.12.1": {
+        "dependencies": {
+          "jQuery": "3.3.1"
         }
       },
       "Microsoft.NETCore.App/2.2.0": {
@@ -204,6 +213,17 @@
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.2.0"
+        }
+      },
+      "SQL/1.0.0.1": {
+        "runtime": {
+          "lib/net40/SQL.dll": {
+            "assemblyVersion": "1.0.0.1",
+            "fileVersion": "1.0.0.1"
+          }
+        },
+        "compile": {
+          "lib/net40/SQL.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3227,6 +3247,20 @@
       "serviceable": false,
       "sha512": ""
     },
+    "jQuery/3.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Emsts1D6E2AgHVBm4cTD2dxoRyWVG+3zK1x8mYbf+k6aAArPTXHR2Ip++o1utlNbmYIzaPFnhGw3YDexp8PjlQ==",
+      "path": "jquery/3.3.1",
+      "hashPath": "jquery.3.3.1.nupkg.sha512"
+    },
+    "jQuery.UI.Combined/1.12.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lm5zM0cuosG5U795wjKW30S5W3h43OCjwIHzDc39xP96An/Ngm4DAHyFcdNZ3Bp6O5+4rxphoxbts4DMXm4P1Q==",
+      "path": "jquery.ui.combined/1.12.1",
+      "hashPath": "jquery.ui.combined.1.12.1.nupkg.sha512"
+    },
     "Microsoft.NETCore.App/2.2.0": {
       "type": "package",
       "serviceable": true,
@@ -3275,6 +3309,13 @@
       "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "SQL/1.0.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zqqgLH3mVitcBSFuJLmcWvzYy2F0tIv5HRjVpYKIO+omn8DJgW/SyE1OfbPCwhJCOejTY+8w7euQqo90jzGlJw==",
+      "path": "sql/1.0.0.1",
+      "hashPath": "sql.1.0.0.1.nupkg.sha512"
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "type": "package",

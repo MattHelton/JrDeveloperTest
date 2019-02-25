@@ -16,10 +16,10 @@ a.navbar-brand {
 
 .grid-container {
     display: grid;
-    justify-content: center;
 }
 .row{
-    outline: 0px;
+    outline: 1px solid black;
+    margin: .5em;
 }
 /*.header-row > div {
     display: grid-inline;
@@ -32,3 +32,11 @@ a.navbar-brand {
 #id, #date{
     display:none;
 }
+
+input, textarea{
+    margin: 1em;
+}
+
+$( function() {
+    $( "#dialog" ).dialog();
+  } );

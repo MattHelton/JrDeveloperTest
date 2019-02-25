@@ -9,9 +9,24 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="jQuery" Version="3.3.1" />
+    <PackageReference Include="SQL" Version="1.0.0.1" />
+    <PackageReference Include="jQuery.UI.Combined" Version="1.12.1" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Remove="Views\Home\Privacy.cshtml" />
+    <Content Remove="wwwroot\lib\jquery\dist\jquery-ui.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="jquery-3.3.1.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="jquery-3.3.1.js">
+      <IncludeInPackage>true</IncludeInPackage>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\lib\jquery\dist\jquery-ui.min.js" />
   </ItemGroup>
 </Project>

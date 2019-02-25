@@ -1,24 +1,37 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+
 }
+
 <div>
-    <div class="grid-container" >
-
+    <div class="grid-container">
         <form>
-            <input id="id" placeholder="id" />
-            <div id="grid">
-                <div class="row">
-                    <label for="">Name&colon;</label>
-                    <input id="name">
-                </div>
+            <div class="form-group">
+                <input id="id" placeholder="id" />
+                <div id="grid">
+                    <div class="row opener">
+                        <label for="">Name&colon;</label>
+                        <input id="name" class="form-control">
+                    </div>
 
-                <div class="row">
-                    <label for="">Description&colon;</label>
-                    <textarea id="description"></textarea>
+                    <div class="row opener">
+                        <label for="">Description&colon;</label>
+                        <textarea id="description" class="form-control"></textarea>
+                    </div>
                 </div>
+                <input id="date" placeholder="date" />
+                <button type="submit" class="btn btn-primary">Submit</button>
+
             </div>
-            <input id="date" placeholder="date" />
         </form>
-
+    </div>
+    <div id="dialog-message" title="Download complete">
+        <p>
+            <span class="ui-icon ui-icon-circle-check" style="float:left; margin:0 7px 50px 0;"></span>
+            Your files have downloaded successfully into the My Downloads folder.
+        </p>
+        <p>
+            Currently using <b>36% of your storage space</b>.
+        </p>
     </div>
 </div>
