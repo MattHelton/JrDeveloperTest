@@ -7,10 +7,6 @@
 $('.grid-row').click(function(){
 $('#dialog-message').dialog({
       modal: true,
-show: {
-        effect: "blind",
-        duration: 500
-      },
       buttons: {
         Ok: function() {
           $( this ).dialog( "close" );

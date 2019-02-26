@@ -1,5 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
+// Model tests need to be written to ensure data is successfully being pulled from the database
+
+
 namespace JrDeveloperTest.Models
 {
     public class FormContext : DbContext
@@ -8,7 +11,7 @@ namespace JrDeveloperTest.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=localhost,1401; Database=PersonDb1;User=SA; Password=1StrongPassword!");
+            optionsBuilder.UseSqlServer("Server=localhost,1433; Database=FormDb1;User=SA; Password=reallyStrongPwd123");
         }
     }
 }

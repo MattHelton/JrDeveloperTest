@@ -1,26 +1,25 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+
+/* Header styling*/
 a.navbar-brand {
     white-space: normal;
     text-align: center;
     word-break: break-all;
 }
 
-
-
 .navbar-brand{
     margin:auto;
     font-size: 3em;
 }
 
-
+/* Dialog Styling*/
 
 #dialog-message{
     display: none;
 }
 
-/* Dialog Styling*/
 
 .ui-widget {
     font-family: Verdana,Arial,sans-serif;
@@ -29,8 +28,6 @@ a.navbar-brand {
 
 .ui-widget-content {
     background: white;
-    /*Change the dialog border color here*/
-    border: 1px solid blue;
     color: black;
 }
 
@@ -60,7 +57,7 @@ a.navbar-brand {
     font-size: 150%;
 }
 
-
+/* Form styling*/
 
 ul {
     display: grid;
