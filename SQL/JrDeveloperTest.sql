@@ -1,29 +1,27 @@
-CREATE TABLE Form (
+IF EXISTS DROP TABLE Forms
+CREATE TABLE Forms (
     FormId Int, 
     Name varchar(20), 
     Description varchar(100), 
     Date datetime
     )
 
-    INSERT INTO Form 
+    INSERT INTO Forms
     VALUES (
-        1, 
         'Form Entry One', 
         'This is the first form entry', 
         CURRENT_TIMESTAMP
         )
 
-    INSERT INTO Form 
-    VALUES (
-        2, 
+    INSERT INTO Forms 
+    VALUES ( 
         'Form Entry Two', 
         'This is the second form entry', 
         CURRENT_TIMESTAMP
         )
 
-    INSERT INTO Form 
-    VALUES (
-        3, 
+    INSERT INTO Forms 
+    VALUES ( 
         'Form Entry Three', 
         'This is the third form entry', 
         CURRENT_TIMESTAMP
